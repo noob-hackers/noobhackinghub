@@ -1,0 +1,694 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ <div id="mainbox" onclick="openFunction()">&#9776; </div>
+  <div id="menu" class="sidemenu">
+     <a href="index.html"> <i  class="fa fa-home"></i> HOME</a>
+     <a href="https://bit.ly/nhytchannel"><i class="fas fa-bell"></i> SUBSCRIBE</a>
+	      <a href="event.html"><i class="fa fa-calendar"></i> HACKING EVENTS</a>
+		  	      <a href="videocourses.html"><i class="fa fa-file-video-o"></i> VIDEO COURSES</a>
+				  	      <a href="hackingbooks.html"><i class="fa fa-file-text"></i> HACKING BOOKS</a>
+						  <a href="nitrobot.html"><i class="fa fa-meh-o"></i> TOOLS BOT</a>
+	  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+	   &nbsp;&nbsp;&nbsp;
+<div id="sidebar-subscribe-box">
+  <div class="sidebar-subscribe-box-wrapper">
+    <p>Subscribe to my email newsletter & receive updates right in your inbox.</p>
+    <div class="sidebar-subscribe-box-form">
+      <form action="https://feedburner.google.com/fb/a/mailverify?uri=noob-hackers/uRyN" class="sidebar-subscribe-box-form" method="post" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=IbrahimJabbari', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" target="popupwindow">
+        <input name="uri" type="hidden" value="IbrahimJabbari" />
+        <input name="loc" type="hidden" value="en_US" /><input class="sidebar-subscribe-box-email-field" name="email" autocomplete="off" placeholder="Enter your email address"/>
+        <input class="sidebar-subscribe-box-email-button" title="" type="submit" value="Subscribe Now !" />
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<style>
+#sidebar-subscribe-box{
+  background:url(https://1.bp.blogspot.com/-IyEBRR8yOQQ/UBhYdBd23PI/AAAAAAAAFTU/aeW3JdAlrCs/s1600/colored-strip.png) repeat scroll 0 0 transparent;
+  border:1px 
+  solid #aaa;border-radius:3px;
+  padding:3px 0
+}
+
+.sidebar-subscribe-box-wrapper{
+  background:url(https://2.bp.blogspot.com/-tUlo5p5gP8o/UBhYciGNgwI/AAAAAAAAFTM/x22pIuNLVPw/s1600/bg-pattern.png) repeat scroll 0 0 #000;
+  color:#aaa;
+  font-size:14px;
+  line-height:20px;
+  padding:1px 20px 10px;
+  text-align:center;
+  text-transform:uppercase
+}
+
+.sidebar-subscribe-box-form{
+  clear:both;
+  display:block;
+  margin:10px 0
+}
+
+form.sidebar-subscribe-box-form{
+  clear:both;
+  display:block;
+  margin:10px 0 0;
+  width:auto
+}
+
+.sidebar-subscribe-box-email-field{
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  background:#fff url(https://1.bp.blogspot.com/-JMYdQsIa9WQ/UDZqxqqrTEI/AAAAAAAAFho/AocEv70U8K8/s1600/sprites.png) no-repeat 0 -27px;
+  border:1px solid #ccc;
+  border-radius:4px;
+  color:#444;margin:0 0 15px;
+  padding:10px 40px;
+  width:68%
+}
+
+.sidebar-subscribe-box-email-button{
+  background:#09f;
+  border:1px solid #007fff;
+  box-shadow:0 1px 0 rgba(255,255,255,0.3) inset, 0 1px 0 transparent;
+  color:#fff;
+  cursor:pointer;
+  font-weight:700;
+  padding:10px;
+  text-shadow:1px 1px 0 rgba(0,0,0,.4);
+  text-transform:uppercase;width:100%
+}
+
+.sidebar-subscribe-box-email-button:hover,.sidebar-subscribe-box-email-button:focus{
+  background:#1ca4ff
+}
+
+.sidebar-subscribe-box-email-button:active{
+  -moz-box-shadow:0 1px 4px rgba(0,0,0,0.5) inset;-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.5) inset;box-shadow:0 1px 4px rgba(0,0,0,0.5) inset;outline:0
+}
+
+iframe,object,embed,.yt-border iframe,.yt-border object,.yt-border embed,table{
+  width:100%
+}
+
+embed{
+  border-radius:3px;
+  -moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);
+  background:#FFF;border:1px solid #ddd;
+  box-shadow:0 2px 4px rgba(0,0,0,0.2);
+  margin:0;
+  padding:4px 4px 4px
+}
+
+#footer-section{
+  background:#f5f5f5 url(https://1.bp.blogspot.com/-n5s9Bu0JCgg/UA_AfQ5qLkI/AAAAAAAAFMU/G9FOuh4SP7k/s0/bg-pattern.png) repeat top left;
+  border-top:1px solid #aaa;
+  box-shadow:inset 0 4px 6px -3px #aaa;
+  font-size:18px;
+  height:100px;
+  margin:10px -30px 5px;
+  padding:0 30px;
+  text-align:center;
+  width:100%
+}
+</style>
+   <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+ </div>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">  
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sbuttons">
+	
+  <a href="#" target="_blank" class="sbutton whatsapp" tooltip="WhatsApp"><i class="fab fa-whatsapp"></i></a>  
+	  
+  <a href="#" target="_blank" class="sbutton fb" tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+  <a href="#" target="_blank" class="sbutton gplus" tooltip="Google Plus"><i class="fab fa-google-plus-g"></i></a>
+
+  <a href="#" target="_blank" class="sbutton twitt" tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+
+  <a href="#" target="_blank" class="sbutton pinteres" tooltip="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+
+  <a target="_blank" class="sbutton mainsbutton" tooltip="Share"><i class="fas fa-share-alt"></i></a>
+	  
+</div>  
+
+</body>
+</html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Noob Hackers</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet">  
+</head>
+<body>
+ 
+ <div class="sbuttons">
+	
+  <a href="https://bit.ly/3s19rkI"  class="sbutton whatsapp" tooltip="WhatsApp"><i class="fab fa-whatsapp"></i></a>  
+	  
+  <a href="http://bit.ly/3eUVGjz"  class="sbutton fb" tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+  <a href="http://bit.ly/3typZRm"  class="sbutton gplus" tooltip="Google Plus"><i class="fa fa-linkedin"></i></a>
+
+  <a href="https://bit.ly/2OPcspF"  class="sbutton twitt" tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+
+  <a href="https://bit.ly/3vGJ2eg"  class="sbutton pinteres" tooltip="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+
+  <a target="_blank" class="sbutton mainsbutton" tooltip="Share"><i class="fas fa-share-alt"></i></a>
+	  
+</div>  
+ <style>
+body {
+  height: 100vh;
+  background-size: 100% 100%;
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+}
+.sbuttons {
+  bottom: 5%;
+  position: fixed;
+  margin: 1em;
+  left: 0;
+}
+.sbutton {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  margin: 20px auto 0;
+  box-shadow: 0px 5px 11px -2px rgba(0, 0, 0, 0.18), 0px 4px 12px -7px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  position: relative;
+}
+.sbutton > i {
+  font-size: 38px;
+  line-height: 60px;
+  transition: all .2s ease-in-out;
+  transition-delay: 2s;
+}
+.sbutton:active,
+.sbutton:focus,
+.sbutton:hover {
+  box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+.sbutton:not(:last-child) {
+  width: 60px;
+  height: 60px;
+  margin: 20px auto 0;
+  opacity: 0;
+}
+.sbutton:not(:last-child) > i {
+  font-size: 25px;
+  line-height: 60px;
+  transition: all .3s ease-in-out;
+}
+.sbuttons:hover .sbutton:not(:last-child) {
+  opacity: 1;
+  width: 60px;
+  height: 60px;
+  margin: 15px auto 0;
+}
+.sbutton:nth-last-child(1) {
+  -webkit-transition-delay: 25ms;
+  transition-delay: 25ms;
+}
+.sbutton:not(:last-child):nth-last-child(2) {
+  -webkit-transition-delay: 20ms;
+  transition-delay: 20ms;
+}
+.sbutton:not(:last-child):nth-last-child(3) {
+  -webkit-transition-delay: 40ms;
+  transition-delay: 40ms;
+}
+.sbutton:not(:last-child):nth-last-child(4) {
+  -webkit-transition-delay: 60ms;
+  transition-delay: 60ms;
+}
+.sbutton:not(:last-child):nth-last-child(5) {
+  -webkit-transition-delay: 80ms;
+  transition-delay: 80ms;
+}
+.sbutton:not(:last-child):nth-last-child(6) {
+  -webkit-transition-delay: 100ms;
+  transition-delay: 100ms;
+}
+ 
+[tooltip]:before {
+  font-family: 'Roboto';
+  font-weight: 600;
+  border-radius: 2px;
+  background-color: #585858;
+  color: #fff;
+  content: attr(tooltip);
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  padding: 5px 7px;
+  margin-left: 10px;
+  position: absolute;
+  left: 100%;
+  bottom: 20%;
+  white-space: nowrap;
+}
+ 
+[tooltip]:hover:before,
+[tooltip]:hover:after {
+  visibility: visible;
+  opacity: 1;
+}
+.sbutton.mainsbutton {
+  background: #000;
+}
+.sbutton.gplus {
+  background: #F44336;
+}
+.sbutton.pinteres {
+  background: #e60023;
+}
+.sbutton.twitt {
+  background: #03A9F4;
+}
+.sbutton.fb {
+  background: #3F51B5;
+}
+.sbutton.whatsapp {
+  background: #00e676;
+}
+ </style>
+ <style>
+ <style type="text/css">
+body{
+ font-family: sans-serif;
+ margin: 20px 40px;
+}
+#mainbox{
+ font-size: 24px;
+ cursor: pointer;
+ transition: all .6s;
+}
+.sidemenu{
+ position: fixed;
+ top: 0px;
+ left: 0px;
+ height: 100%;
+ width: 0px;
+ background-color: #000;
+ z-index: 1;
+ padding-top: 100px;
+ overflow-x: hidden;
+ transition: all .5s;
+}
+.sidemenu a{
+ padding: 8px 8px 8px 64px;
+ text-decoration: none;
+ font-size: 20px;
+ color: #999;
+ display: block;
+}
+.sidemenu a:hover{
+  color: white;
+}
+.sidemenu .closebtn{
+ position: absolute;
+ top: 0px;
+ right: 25px;
+ font-size: 36px;
+ margin-left: 32px;
+}
+</style>
+ <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+ </style>
+</body>
+<script type="text/javascript">
+ function openFunction(){
+  document.getElementById("menu").style.width="300px";
+  document.getElementById("mainbox").style.marginLeft="300px";
+  document.getElementById("mainbox").innerHTML="";
+ }
+function closeFunction(){
+ document.getElementById("menu").style.width="0px";
+ document.getElementById("mainbox").style.marginLeft="0px";
+ document.getElementById("mainbox").innerHTML="&#9776; ";
+}
+</script>
+
+<style>
+/* 4 */
+
+pn {
+  font-family: 'Pompiere', cursive;
+  font-weight: 300;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+.framenn {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+buttonnn {
+  margin: 20px;
+}
+.custom-btn {
+  color: #fff;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-zebra {
+  color: #8ce436;
+  padding: 0;
+  border: 1px solid #8ce436;
+  box-shadow: 0 0 5px #8ce436, 0 0 5px inset;
+}
+.btn-zebra:after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 6px;
+  width: 90%;
+  height: 70%;
+  border: 1px solid #8ce436;
+  box-shadow: 0 0 5px #8ce436 inset;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.btn-zebra:hover:after {
+  opacity: 1;
+}
+</style> 
+<center>     
+  <a href="http://pdisk.net/share-video?videoid=nv25v90005hd"><img src="https://www.bizzabo.com/hs-fs/hubfs/homepage%20image%20(1).png?width=750&height=600&name=homepage%20image%20(1).png" alt="Cinque Terre" width="370" height="290">
+</div>&nbsp;</a>
+
+ <center><h1 id="headline">NEW EVENT</h1>
+<div id="clockdiv">
+  <div>
+    <span id="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span id="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span id="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span id="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+</div>&nbsp;
+</div>&nbsp;&nbsp;
+</center>
+<style>
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #00BF96;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #00816A;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+</style>
+<script>
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let birthday = "Mar 26, 2021 9:00:00",
+      countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        let now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          let headline = document.getElementById("headline"),
+              clockdiv = document.getElementById("clockdiv"),
+              content = document.getElementById("content");
+
+          headline.innerText = "EVENT STARTED BRUHHHHHH";
+          clockdiv.style.display = "none";
+          content.style.display = "block";
+
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
+  </center>
+  <style>
+  body {
+  background: #000;
+  color: #fff;
+}
+.neonx {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Megrim', cursive;
+  text-shadow: 
+        0 0 5px #0bf4f3,
+        0 0 10px #0bf4f3,
+        0 0 20px #0bf4f3,
+        0 0 40px #0bf4f3,
+        0 0 80px #0bf4f3;
+}
+  </style>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<script type="text/javascript">
+  function CheckCookie(xxxxxxx){
+   if (cookie(xxxxxxx)){
+    document.getElementById(xxxxxxx).style.display='none';
+   }
+  }
+  function setcookie(xxxxxxx,days){
+   document.cookie=xxxxxxx+'=true;expires='+(new Date(new Date().getTime()+days*86400000)/* milisec to Day 86400000 = 1 Day */ .toGMTString())+';path=/';
+   document.getElementById(xxxxxxx).style.display='none';}
+  function cookie(xxxxxxx){
+   var re=new RegExp(xxxxxxx+'[^;]+','i');
+   if (document.cookie.match(re)){
+    return document.cookie.match(re)[0].split("=")[1];
+   }
+   return null;
+  }
+
+
+
+function showIt2(){document.getElementById("wwwww").style.display = "block";}
+setTimeout("showIt2()", 15000);// after 15 secs Start Display -> Visible
+
+
+
+</script>
+
+<style>
+  #wwwww{display:none;}
+  .xxxxxxx {backdrop-filter: blur(5px);
+    background: #607d8b29;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+  .imgg{width: 40px;
+    height: 40px;
+    border: 1px solid #e3e8eb;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+  .tele_ox {width: 70%;
+    max-width: 320px;
+    margin: 210px auto;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(9, 22, 29, 0.08);
+    border-radius: 6px;
+    padding: 25px 32px;
+}
+  .popup__logo{
+    width: 40px;
+    border: 1px solid #e3e8eb;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 12px;}
+  .headl_te{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 1px 0px 0px;
+    line-height: 26px;
+    color: #09161d;
+    margin-top: 29px;
+    text-align: center;
+  }
+  .sub_fsdr{
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  text-align: center;
+}
+  #Close_fa {
+  font-weight: bolder;
+  color: #000;
+  padding: 6px 9px;
+  margin:30px 0px 0px;
+  border: 2px solid #595c5d;
+  font-size: 26px;
+  border-radius: 50px;
+} @media screen and (max-width: 2500px) {
+.index_img{position: absolute;background: #fff; padding: 10px 10px; margin: -174px 60px;}
+.tele_ox{margin:20% auto;}
+
+}@media screen and (max-width: 680px) {
+.index_img{position: absolute;background: #fff; padding: 10px 10px; margin: -174px 65px;}
+.tele_ox{margin:210px auto;}
+}@media screen and (max-width: 560px) {
+.index_img{position: absolute;background: #fff; padding: 10px 10px; margin: -135px 80px;}
+.imggggg{width:140px;}.tele_ox{margin:210px auto;}
+
+}@media screen and (max-width: 440px) {
+.index_img{position: absolute;background: #fff; padding: 10px 10px; margin: -120px 60px;}
+.imggggg{width:130px;}.tele_ox{margin:210px auto;}
+
+}@media screen and (max-width: 360px) {
+
+.index_img{position: absolute;background: #fff; padding: 10px 10px; margin: -110px 45px;}
+.imggggg{width:120px;}.tele_ox{margin:210px auto;}
+}@media screen and (max-width: 300px) {
+
+.index_img{background: #fff; padding: 10px 10px; margin: -95px 35px;}
+.imggggg{width:100px;}.tele_ox{margin:210px auto;}
+}</style>
+
+  <div id="wwwww">
+  <div class="xxxxxxx" id="xxxxxxx">
+
+<div class="tele_ox">
+<div class="index_img" style="position: absolute;">
+<!--Here your Image Url -->
+  <img class="imggggg" src="https://avatars.githubusercontent.com/u/49580304?s=460&u=7dece7ce0c7871331f1c2711cf3ba9d0911b1a2e&v=4" />
+</div>
+<!--Here your Title -->
+<div class="headl_te"><p>Noob Hackers Channel</p></div>
+<!--Here your Sub-Title + Decsciption  -->
+<div class="sub_fsdr">Stay updated on Technolagy and Android Discussion - Review, News, Games and Themes
+  </div>
+<div style="text-align: center; ">
+  <!--Here your Telegram Channel Url -->
+  <a href="https://t.me/noobhackersofficial">
+    <button class="btn_joinn" style="color: #fff;border: none; margin: 20px 0 0; font-size: 20px; padding: 10px 0px; border-radius: 20px; width: 100%; background: #2196F3;">
+      Join <b>.</b><i class="fa fa-telegram" style="font-size:20px;"></i></button></a>
+      <!--Here your Youtube Channel Url -->
+  <a href="https://rebrand.ly/noobhackers">
+
+    <button class="btn_joinn" style="color: #fff;border: none; margin: 10px 0 0; font-size: 20px; padding: 10px 0px; border-radius: 20px; width: 100%; background: #E91E63;">
+      Subscribe <i class="fa fa-youtube-play" style="font-size:20px;"></i></button></a>
+
+  <i id='Close_fa' class="fa fa-times" aria-hidden="true" onmouseup="setcookie('xxxxxxx',1)" title='close the Advertisment'></i>
+</div>
+
+
+
+</div></div>
+
+<script type="text/javascript"> CheckCookie('xxxxxxx');</script>
+
+</div>
+
+<style>
+.btn {
+  border: 2px solid Green;
+  background-color: Black;
+  color: #37EB14;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: Black;
+}
+</style>
+</div>&nbsp;
+</div>&nbsp;
+<center><a href="https://bit.ly/3vIV0UG"><button class="btn"><i class="fa fa-calendar-plus-o"></i> ADD EVENT</button></a>
+&nbsp;&nbsp;
+<a href="https://bit.ly/3vIV0UG"><button class="btn"><i class="fa fa-laptop"></i> JOIN EVENT</button></a></center>
+</body>
+</html>
+
+</div>
+</body>
+</html>
