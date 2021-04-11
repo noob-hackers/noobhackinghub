@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+    body {
+  background: #202020;
+  text-align: center;
+}
+
+p { 
+  color: Green;
+}
+
+.card {
+  background: #202020;
+    border: 6px solid Green;
+  border-radius: 30px;
+  display: inline-block;
+  height: auto;
+  margin: 2.5rem;
+  position: relative;
+  width: 300px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+  </style>
+  <style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 2px solid Green;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+      border: 2px solid Green;
+  padding: 10px;
+  background: #202020;
+  color: Green;
+  font-size: 17px;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #202020;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+  <style>
+.siteFooterBar {
+	position: fixed;
+	bottom: 0;
+	padding-top: 10px;
+	width: 100%;
+	box-shadow: 0px 0px 25px rgb(207, 207, 207);
+	height: 40px;
+	color: #04f000;
+	background: #F3F3F3;
+}
+
+.content {
+	display: block;
+	padding: 0 px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 8px;
+	text-align: center;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+.foot { display: inline-block; line-height: 20px; vertical-align: top }
+
+.img { display: inline-block;  }
+  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        var videos = ["https://www.youtube.com/embed/FBDkRXn3YVo",                                             
+		              "https://www.youtube.com/embed/OhTU2Cm_Q7Y",
+                      "https://www.youtube.com/embed/0pSkJDo2BJY",
+					  "https://www.youtube.com/embed/bX_93Vk-Kzs",
+					  "https://www.youtube.com/embed/d7WI4vkjAyc",
+					  "https://www.youtube.com/embed/P3oNAjZXeSs",
+					  "https://www.youtube.com/embed/dZDbA6EBEmA",
+					  "https://www.youtube.com/embed/epLykAk4NFg",
+					  "https://www.youtube.com/embed/coCl46oBdH4",
+					  "https://www.youtube.com/embed/oXP0BM_Tbms",
+					  "https://www.youtube.com/embed/gSxrA6iOXyc",
+					  "https://www.youtube.com/embed/kpyFk30myno",
+					  "https://www.youtube.com/embed/FLh84yv4dEA",
+					  "https://www.youtube.com/embed/q9qma89TOJk",
+					  "https://www.youtube.com/embed/eJmwMQRegIs",
+					  "https://www.youtube.com/embed/gMticVRlWI8",
+					  "https://www.youtube.com/embed/5ecMpILkndE",
+					  "https://www.youtube.com/embed/Qw3H29IvGUo",
+					  "https://www.youtube.com/embed/Tgd5lpjixyU",
+					  "https://www.youtube.com/embed/5tdInMjVFgs",
+					  "https://www.youtube.com/embed/pXcXt8-DAHY",
+					  "https://www.youtube.com/embed/vBQvc9RB360",
+					  "https://www.youtube.com/embed/RBNOWy_grXc",
+					  "https://www.youtube.com/embed/OCfAv6WQWS0",
+					  "https://www.youtube.com/embed/lk1nX2_sFnI",
+					  "https://www.youtube.com/embed/5DkxzK2iF0M",];
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '340');
+            player.setAttribute('height', '220');
+            player.setAttribute('src', randomVideoUrl);
+
+            playerDiv.appendChild(player);
+        };
+    </script>
+	<center><h1 style="color:Yellow"><----LATEST-----></h1></center>
+	</div>
+   <center> <iframe class="latestVideoEmbed" vnum='0' cid="UCNlBa88-a9WtVpCRj9EwL-A" width="340" height="220"></iframe></center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+function loadVideo(iframe) {
+  $.getJSON(reqURL + iframe.getAttribute('cid'),
+    function(data) {
+      var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+      console.log(videoNumber);
+      var link = data.items[videoNumber].link;
+      id = link.substr(link.indexOf("=") + 1);
+      iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0");
+    }
+  );
+}
+var iframes = document.getElementsByClassName('latestVideoEmbed');
+for (var i = 0, len = iframes.length; i < len; i++) {
+  loadVideo(iframes[i]);
+}
+</script>
+</head>
+<body>
+<center><h1 style="color:Yellow"><----RANDOM-----></h1></center>
+</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+   <center> <div id="random_player" /></center>
+   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <style>
+    body {
+  background: #202020;
+  text-align: center;
+}
+
+p { 
+  color: Green;
+}
+
+.card {
+  background: #202020;
+    border: 6px solid Green;
+  border-radius: 30px;
+  display: inline-block;
+  height: auto;
+  margin: 2.5rem;
+  position: relative;
+  width: 300px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+  </style>
+  <style>
+.siteFooterBar {
+	position: fixed;
+	bottom: 0;
+	padding-top: 10px;
+	width: 100%;
+	box-shadow: 0px 0px 25px rgb(207, 207, 207);
+	height: 40px;
+	color: #04f000;
+	background: #F3F3F3;
+}
+
+.content {
+	display: block;
+	padding: 0 px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	text-align: center;
+	font: 25px Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+.foot { display: inline-block; line-height: 20px; vertical-align: top }
+
+.img { display: inline-block;  }
+  </style>
+      <div class="siteFooterBar">
+        <div class="content">
+           <a href="https://www.noob-hackers.com"> <img src="https://avatars.githubusercontent.com/u/49580304?s=460&u=7dece7ce0c7871331f1c2711cf3ba9d0911b1a2e&v=4" width="30px" height="30px" ></a>
+                &nbsp;
+				<div class="foot">2021 # All rights reserved (www.noob-hackers.com)</div>
+			&nbsp;
+			&nbsp;
+			&nbsp;
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</body>
+
+</html>
